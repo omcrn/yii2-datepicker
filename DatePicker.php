@@ -136,10 +136,9 @@ class DatePicker extends InputWidget
     private function registerTranslations()
     {
         Yii::$app->i18n->translations['datepicker'] = [
-            'class' => 'yii\i18n\PhpMessageSource',
-            'sourceLanguage' => 'en-US',
-            'basePath' => __DIR__ . DIRECTORY_SEPARATOR . 'messages',
-            'forceTranslation' => true,
+            'class' => 'yii\i18n\DbMessageSource',
+            'sourceMessageTable'=>'{{%i18n_source_message}}',
+            'messageTable'=>'{{%i18n_message}}',
         ];
 
         $this->clientOptions['tooltips'] = [
