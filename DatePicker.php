@@ -135,11 +135,11 @@ class DatePicker extends InputWidget
      */
     private function registerTranslations()
     {
-        Yii::$app->i18n->translations['datepicker'] = [
+        /*Yii::$app->i18n->translations['datepicker'] = [
             'class' => 'yii\i18n\DbMessageSource',
             'sourceMessageTable'=>'{{%i18n_source_message}}',
             'messageTable'=>'{{%i18n_message}}',
-        ];
+        ];*/
 
         $this->clientOptions['tooltips'] = [
             'today' => Yii::t('datepicker', 'Go to today'),
